@@ -9,9 +9,12 @@ It verifies whether a user with valid credentials (Admin / admin123) can success
 
 💡 Purpose:
 
+
 The project demonstrates real-time automation testing of login functionality in a web application. It helps testers and developers ensure that user authentication works correctly and that invalid credentials are handled properly.
 
 🏢 About OrangeHRM Demo
+
+
 
 OrangeHRM is an open-source Human Resource Management (HRM) system used for managing HR processes like employee information, leave management, and payroll.
 
@@ -19,13 +22,19 @@ Demo Site: https://opensource-demo.orangehrmlive.com
 
 Credentials for testing:
 
+
+
 Username: Admin
 
 Password: admin123
 
 This project uses the demo site to practice login page automation without affecting real systems.
 
-🛠️ Tools & Technologies Used
+
+
+🛠️ Tools & Technologies Used:
+
+
 
 Programming Language: Java
 
@@ -37,7 +46,11 @@ Browser: Google Chrome (via ChromeDriver)
 
 Test Management: Excel (for documenting test cases)
 
+
+
 📂 Project Structure
+
+
 
 Selenium-Login-Page-Automation/
 ├── src/
@@ -46,21 +59,29 @@ Selenium-Login-Page-Automation/
 │   └── Login_TestCases.xlsx   # Manual test cases in Excel
 ├── README.md                  # Project documentation
 
-🧪 Testing Techniques Used
+🧪 Testing Techniques Used:
+
+
 
 Manual Testing:
+
 
 Writing Excel test cases to validate login scenarios.
 
 Covers positive & negative testing (valid credentials, invalid password, empty fields).
 
+
+
 Automation Testing:
+
 
 Selenium WebDriver automates browser actions (input username/password, click login).
 
 Validation: Checks whether the login redirects to the dashboard successfully.
 
+
 Testing Types Covered:
+
 
 Functional Testing ✅
 
@@ -68,7 +89,11 @@ Positive & Negative Testing ✅
 
 UI Validation ✅
 
-⚙️ How This Project Works
+
+
+⚙️ How This Project Works:
+
+
 
 Launch Chrome browser using Selenium.
 
@@ -80,7 +105,11 @@ Click the Login button.
 
 Verify whether login is successful by checking the dashboard page URL.
 
+
+
 Log the result in the console:
+
+
 
 ✅ Login Successful → Test Passed
 
@@ -88,13 +117,22 @@ Log the result in the console:
 
 Close the browser.
 
+
+
 🎯 Domain
+
+
+
 
 Domain: Human Resource Management (HRM)
 
 Purpose: Demonstrates login page validation in HRM software using automation.
 
+
+
 🛠️ Implementation Benefits
+
+
 
 Reduces manual effort in repetitive login testing.
 
@@ -104,14 +142,25 @@ Can be extended to full regression testing of HRM modules.
 
 Ideal for learning Selenium, Java, and test automation in real-time applications.
 
+
+
 📊 Sample Test Cases (Excel)
+
+
+
 Test Case ID	Test Scenario	Input Username	Input Password	Expected Result
 TC001	Valid Login	Admin	admin123	Login Successful
 TC002	Invalid Password	Admin	wrongpass	Error Message
 TC003	Empty Username	(blank)	admin123	Error Message
 TC004	Empty Password	Admin	(blank)	Error Message
 TC005	Both fields empty	(blank)	(blank)	Error Message
+
+
+
 🚀 How to Run the Project
+
+
+
 
 Clone the repository
 
@@ -131,7 +180,14 @@ Run loginpage.java as a Java application in Eclipse.
 
 Check the console for test results.
 
+
+
+
 🔮 Future Enhancements
+
+
+
+
 
 Integrate with TestNG / JUnit for structured testing.
 
@@ -141,7 +197,11 @@ Include data-driven testing from Excel/CSV files.
 
 Automate additional HRM modules (Employee Management, Leave, Payroll).
 
+
+
 📸 Screenshots (Optional)
+
+
 
 Screenshot of login page automation in action
 
