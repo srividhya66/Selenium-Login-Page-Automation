@@ -1,0 +1,30 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class loginpage {
+    public static void main(String[] args) {
+        // Set ChromeDriver path (only if Selenium < 4.6)
+        System.setProperty("webdriver.chrome.driver", "C:\\path\\to\\chromedriver.exe");
+
+        // Launch Chrome
+        WebDriver driver = new ChromeDriver();
+
+        // Open OrangeHRM demo site
+        driver.get("https://opensource-demo.orangehrmlive.com/");
+
+        // Valid login test
+        driver.findElement(By.name("username")).sendKeys("Admin");
+        driver.findElement(By.name("password")).sendKeys("admin123");
+        driver.findElement(By.xpath("//button[@type='submit']")).click();
+
+        // Verify login success
+        if (driver.getCurrentUrl().contains("dashboard")) {
+            System.out.println("✅ Login Successful - Test Passed!");
+        } else {
+            System.out.println("❌ Login Failed - Test Failed!");
+        }
+
+        driver.quit();
+    }
+}
